@@ -2,7 +2,7 @@ import Cards from "./Cards";
 import { useState } from 'react';
 
 const Listas = () => {
-    const frutas = [
+    const artistas = [
         { id: 1, nombre: "André Rieu", imagen: 'andre_rieu.jpg' },
         { id: 2, nombre: "Max Richter", imagen: 'max_richter.jpg' },
         { id: 3, nombre: "Ludovico Einaudi", imagen: 'ludovico_einaudi.jpg' },
@@ -11,7 +11,7 @@ const Listas = () => {
     const [total, setTotal] = useState(0);
     const [busqueda, setBusqueda] = useState("");
 
-    const artistasFiltrados = frutas.filter((artista) =>
+    const artistasFiltrados = artistas.filter((artista) =>
         artista.nombre.toLowerCase().includes(busqueda.toLowerCase()),
     );
 
